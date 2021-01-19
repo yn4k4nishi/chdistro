@@ -22,7 +22,7 @@ if [ ! -e /opt/ros/$1 ]; then
 fi
 
 # ROS2
-if [ $1 = "eloquent" ] || [ $1 = "dashing" ]; then
+if [ $1 = "eloquent" ] || [ $1 = "dashing" ] || [ $1 = "foxy" ]; then
     source /opt/ros/$1/setup$suffix
     export ROS_HOME=~/.ros
     export ROS_LOCALHOST_ONLY=1
